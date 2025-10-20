@@ -1,0 +1,19 @@
+{
+  "name": "kiririmode-claudecode-plugins",
+  "owner": {
+    "name": "kiririmode",
+    "email": "kiririmode@gmail.com"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code plugins used by kiririmode for everyday development workflows. This marketplace provides practical tools and integrations to enhance development productivity.",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "common-dev-essentials",
+      "source": "./plugins/common-dev-essentials",
+      "strict": true
+    }
+  ]
+}
