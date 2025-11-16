@@ -9,9 +9,9 @@
         },
         "ghcr.io/devcontainers/features/python:1": {},
         "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
-        "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {},
         "ghcr.io/devcontainers-extra/features/direnv:1": {}
     },
+    "postStartCommand": "curl -fsSL https://claude.ai/install.sh | bash",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -31,7 +31,7 @@
                 // 言語ごとのフォーマッタ
                 "[json]": {
                     "editor.defaultFormatter": "esbenp.prettier-vscode"
-                },
+                }
             }
         },
         "forwardPorts": [],
