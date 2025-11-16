@@ -7,6 +7,5 @@
   },
   "homepage": "https://github.com/kiririmode/claude-plugins",
   "repository": "https://github.com/kiririmode/claude-plugins",
-  "license": "MIT",
-  "plugin"
+  "license": "MIT"
 }

@@ -1,0 +1,43 @@
+{
+  "rules": {
+    "preset-japanese": {
+      "max-ten": {
+        "max": 3
+      },
+      "no-doubled-joshi": {
+        "min_interval": 1
+      },
+      "sentence-length": {
+        "max": 120
+      },
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "である",
+        "preferInList": "である",
+        "strict": true
+      }
+    },
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 120
+      },
+      "no-exclamation-question-mark": false,
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "である",
+        "preferInList": "である",
+        "strict": true
+      }
+    },
+    "preset-ja-spacing": {
+      "ja-space-around-code": {
+        "before": true,
+        "after": true
+      },
+      "ja-space-around-link": {
+        "before": false,
+        "after": false
+      }
+    }
+  }
+}

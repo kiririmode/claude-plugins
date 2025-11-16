@@ -3,19 +3,19 @@ allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git
 description: Analyze changes and create commits in Conventional Commits format, split into logical units
 ---
 
-このコマンドは、現在の変更を分析し、論理的な単位に分割して日本語のコミットメッセージを生成します。
+このコマンドは現在の変更を分析し、論理的な単位に分割して日本語のコミットメッセージを生成する。
 
 # コンテキスト
 
-- 現在の git status: !`git status`
-- 現在の git diff (ステージ済みと未ステージの変更): !`git diff HEAD`
+- 現在のgit status: !`git status`
+- 現在のgit diff (ステージ済みと未ステージの変更): !`git diff HEAD`
 - 現在のブランチ: !`git branch --show-current`
 - 最近のコミットスタイルの確認: !`git log --oneline -10`
 
 ## 実行手順
 
 1. **変更の分類と Conventional Commits タイプの決定**
-   変更を以下のような論理的な単位に分類し、適切な Conventional Commits タイプを選択してください:
+   変更を以下のような論理的な単位に分類し、適切なConventional Commitsタイプを選択してください:
    - **feat**: 機能追加（新しい機能の実装）
    - **fix**: バグ修正（既存機能の不具合修正）
    - **refactor**: リファクタリング（動作を変えずにコードを改善）
@@ -28,7 +28,7 @@ description: Analyze changes and create commits in Conventional Commits format, 
    - **ci**: CI設定ファイルやスクリプトの変更
 
 2. **コミットメッセージの生成（Conventional Commits 形式）**
-   各論理的な単位について、以下の形式で日本語の Conventional Commits メッセージを作成してください:
+   各論理的な単位について、以下の形式で日本語のConventional Commitsメッセージを作成してください:
 
    ```
    <type>: <日本語の概要>
@@ -59,9 +59,9 @@ description: Analyze changes and create commits in Conventional Commits format, 
    ```
 
    **重要な制約事項:**
-   - type は英語、説明は日本語で記述すること
+   - typeは英語、説明は日本語で記述すること
    - Claude Code、AI、自動生成ツールへの言及は一切含めないこと
-   - Co-Authored-By トレーラーを含めないこと
+   - Co-Authored-Byトレーラーを含めないこと
    - 絵文字を使用しないこと
    - 破壊的変更がある場合は、BREAKING CHANGE: セクションを追加
 
@@ -102,13 +102,13 @@ description: Analyze changes and create commits in Conventional Commits format, 
 - ステージング済みの変更がある場合は、それらも含めて分析してください
 - 変更が論理的に1つの単位にまとまっている場合は、分割せずに1つのコミットを作成してください
 - 複数の独立した変更が混在している場合のみ、複数のコミットに分割してください
-- コミット前に pre-commit フックが実行される場合、フックが変更を加えた場合は適切に対処してください
-- コミット作成後、push は実行しません（ユーザーが明示的に指示した場合のみ）
+- コミット前にpre-commitフックが実行される場合、フックが変更を加えた場合は適切に対処してください
+- コミット作成後、pushは実行しません（ユーザーが明示的に指示した場合のみ）
 
 ## エラー処理
 
-- pre-commit フックがファイルを変更した場合: 変更を確認し、必要に応じてコミットを修正
-- コミットが失敗した場合: エラー内容を確認し、ユーザーに報告
-- 未追跡ファイルで .env や credentials.json などの秘密情報を含む可能性があるファイル: コミットせずにユーザーに警告
+- pre-commitフックがファイルを変更した場合は変更を確認し必要に応じてコミットを修正する
+- コミットが失敗した場合はエラー内容を確認しユーザーに報告する
+- 未追跡ファイルで .envやcredentials.jsonなどの秘密情報を含む可能性があるファイルはコミットせずユーザーに警告する
 
 すべての作業を日本語でユーザーに報告してください。

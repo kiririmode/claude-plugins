@@ -21,7 +21,9 @@ if [ -f /workspaces/claude-plugins/.envrc ]; then
 fi
 
 # Initialize direnv in bash for all future shells
+# shellcheck disable=SC2016
 if ! grep -q 'eval "$(direnv hook bash)"' ~/.bashrc; then
+    # shellcheck disable=SC2016
     echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 fi
 
