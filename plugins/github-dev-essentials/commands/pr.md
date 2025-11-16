@@ -5,6 +5,7 @@ description: Generate PR description and automatically create pull request on Gi
 
 ## コンテキスト
 
+- 現在のブランチ: !`git rev-parse --abbrev-ref HEAD`
 - 現在のgit状態: !`git status`
 - このPRの変更: !`git diff origin/main...HEAD`
 - このPRのコミット: !`git log --oneline origin/main..HEAD`
