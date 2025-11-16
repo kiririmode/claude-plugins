@@ -19,6 +19,11 @@
       "name": "general",
       "source": "./plugins/general",
       "strict": true
+    },
+    {
+      "name": "github-dev-essentials",
+      "source": "./plugins/github-dev-essentials",
+      "strict": true
     }
   ]
 }
