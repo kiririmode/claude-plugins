@@ -13,15 +13,22 @@ description: Generate PR description and automatically create pull request on Gi
 
 以下の順で、PRのdescriptionを生成して、PRを作成してください。
 
-1. まず、PRのテンプレートの内容を確認してください。
-   - .github/pull_request_template.mdがあればその内容を読んでください。なければ、PRの内容として以下としてください。
+1. まず、PRのテンプレートの内容を確認すること
+   - .github/pull_request_template.mdがあればその内容を読むこと。なければ、PRの内容として以下とすること
+     1. 前提（なぜこのPRが存在するのか）:「背景（背景要因）」と「課題（Problem）」を短く書く
+     2. 目的（このPRが達成するゴール）: 背景と課題を踏まえたうえで、このPRで達成したい目的を明示する
+     3. 変更内容（What）: レビュアーが迷いづらい書き方で「変えた事実」を列挙する。単にコードではなく、「どこがどう変わったか」というレベルで説明する。
+     4. 変更のスコープ（どこまで含む／含まない）: このPRに含めた範囲、あえて含めなかった範囲
+     5. 動作確認方法
+     6. リスク・注意点: レビュアーが気づきづらい箇所を書いておく。
 2. 現在のbranchに対応するPRが存在しているかをsearch_pull_requestsとpull_request_readを使って確認してください
 3. すでにPRが存在していれば、`update_pull_request` を使ってPRの内容を更新してください。存在していなければ、現在のbranchをpushし、 `create_pull_request` を使ってPRを作成してください。
 
 ### PR descriptionの内容
 
 1. PRテンプレートの**正確な形式**に従って、日本語でPR説明を作成
-2. このPRで行われた変更を視覚化する**Mermaid図**を追加
+2. PRのレビュアーに対して、認知負荷が低くなるように留意すること
+3. このPRで行われた変更を視覚化する**Mermaid図**を追加
 
 ### 要件:
 
