@@ -14,9 +14,9 @@ description: Generate PR description and automatically create pull request on Gi
 以下の順で、PRのdescriptionを生成して、PRを作成してください。
 
 1. まず、PRのテンプレートの内容を確認してください。
-    - .github/pull_request_template.md があればその内容を読んでください。なければ、PRの内容として以下としてください。
-2. 現在のbranchに対応するPRが存在しているかを search_pull_requests と pull_request_read を使って確認してください
-3. すでにPRが存在していれば、`update_pull_request`を使ってPRの内容を更新してください。存在していなければ、現在のbranchをpushし、 `create_pull_request`を使ってPRを作成してください。
+   - .github/pull_request_template.mdがあればその内容を読んでください。なければ、PRの内容として以下としてください。
+2. 現在のbranchに対応するPRが存在しているかをsearch_pull_requestsとpull_request_readを使って確認してください
+3. すでにPRが存在していれば、`update_pull_request` を使ってPRの内容を更新してください。存在していなければ、現在のbranchをpushし、 `create_pull_request` を使ってPRを作成してください。
 
 ### PR descriptionの内容
 
