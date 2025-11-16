@@ -11,6 +11,7 @@
         "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
         "ghcr.io/devcontainers-extra/features/direnv:1": {}
     },
+    "postCreateCommand": "bash .devcontainer/init-direnv.sh",
     "postStartCommand": "curl -fsSL https://claude.ai/install.sh | bash",
     "customizations": {
         "vscode": {
