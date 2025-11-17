@@ -24,7 +24,7 @@
         "FASTMCP_LOG_LEVEL=ERROR",
         "--env-file",
         "${PROJECT_ROOT}/.env",
-        "awslabs/aws-pricing-mcp-server:latest"
+        "mcp/aws-pricing-mcp-server:latest"
       ]
     }
   }
