@@ -5,10 +5,11 @@ description: Generate PR description and automatically create pull request on Gi
 
 ## コンテキスト
 
+- リモートリポジトリのデフォルトブランチを確認: !`git symbolic-ref refs/remotes/origin/HEAD`
 - 現在のブランチ: !`git rev-parse --abbrev-ref HEAD`
 - 現在のgit状態: !`git status`
-- このPRの変更: !`git diff origin/main...HEAD`
-- このPRのコミット: !`git log --oneline origin/main..HEAD`
+- このPRの変更: `git diff origin/[デフォルトブランチ名]...HEAD`
+- このPRのコミット: `git log --oneline origin/[デフォルトブランチ名]..HEAD`
 
 ## タスク
 
