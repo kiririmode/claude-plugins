@@ -52,3 +52,4 @@ description: Generate PR description and automatically create pull request on Gi
 - 新規または修正されたコンポーネントをハイライトすること
 - 一貫したスタイルと色を使用すること
 - PR説明の専用セクションに図を追加すること
+- mermaid図のラベルに日本語を含む場合は、その日本語部分は `"` で囲むこと
