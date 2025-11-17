@@ -1,0 +1,11 @@
+{
+  "name": "terraform-aws-essentials",
+  "description": "Essential utilities and workflow enhancements for Terraform AWS projects",
+  "version": "0.1.0",
+  "author": {
+    "name": "kiririmode"
+  },
+  "homepage": "https://github.com/kiririmode/claude-plugins",
+  "repository": "https://github.com/kiririmode/claude-plugins",
+  "license": "MIT"
+}

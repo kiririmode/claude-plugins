@@ -24,6 +24,11 @@
       "name": "github-dev-essentials",
       "source": "./plugins/github-dev-essentials",
       "strict": true
+    },
+    {
+      "name": "terraform-aws-essentials",
+      "source": "./plugins/terraform-aws-essentials",
+      "strict": true
     }
   ]
 }
